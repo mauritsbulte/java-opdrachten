@@ -9,20 +9,20 @@ public class Opdracht402 extends Applet{
     }
 
     public void paint(Graphics g) {
-        setBackground(Color.DARK_GRAY);
-        g.setColor(Color.yellow);
+        setBackground(Color.white);
+        g.setColor(Color.black);
 
-        g.drawRect(100, 40, 150, 90);
-        g.fillRect(100, 40, 150, 90);
+        g.drawRect(80, 40, 150, 150);
 
-        g.setColor(Color.magenta);
-        g.drawRect(310, 60, 20, 20);
-        g.fillRect(310, 60, 20, 20);
 
-        g.drawRect(360, 60, 20, 20);
-        g.fillRect(360, 60, 20, 20);
 
-        g.drawRect(335, 100, 20, 30);
-        g.fillRect(335, 100, 20, 30);
+        g.drawRect(90, 60, 40, 40);
+
+
+        g.drawRect(180, 60, 40, 40);
+
+
+        g.drawRect(140, 150, 40, 40);
+
     }
 }
