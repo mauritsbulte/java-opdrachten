@@ -13,15 +13,15 @@ public class Opdracht403 extends Applet {
 
 
         g.setColor(Color.white);
-        g.fillRect(20, 260, 20, 40);
+        g.fillRect(20, 140, 40, 160);
 
         g.setColor(Color.RED);
-        g.fillRect(20, 200, 80, 20);
+        g.fillRect(20, 20,160, 40);
 
         g.setColor(Color.white);
-        g.fillRect(20, 220, 80, 20);
+        g.fillRect(20, 60, 160, 40);
 
         g.setColor(Color.blue);
-        g.fillRect(20, 240, 80, 20);
+        g.fillRect(20, 100, 160, 40);
     }
 }

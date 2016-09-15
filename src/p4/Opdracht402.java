@@ -12,8 +12,8 @@ public class Opdracht402 extends Applet{
         setBackground(Color.DARK_GRAY);
         g.setColor(Color.yellow);
 
-        g.drawRect(300, 40, 90, 90);
-        g.fillRect(300, 40, 90, 90);
+        g.drawRect(100, 40, 150, 90);
+        g.fillRect(100, 40, 150, 90);
 
         g.setColor(Color.magenta);
         g.drawRect(310, 60, 20, 20);

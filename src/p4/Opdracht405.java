@@ -8,22 +8,10 @@ public class Opdracht405 extends Applet {
     }
 
     public void paint(Graphics g) {
-        setBackground(Color.DARK_GRAY);
+        setBackground(Color.BLUE);
         g.setColor(Color.yellow);
 
-
-        g.setColor(Color.BLACK);
-        g.drawOval(150, 250, 10, 10);
-        g.fillOval(150, 250, 10, 10);
-
-        g.drawOval(120, 250, 10, 10);
-        g.fillOval(120, 250, 10, 10);
-
-        g.drawOval(120, 280, 10, 10);
-        g.fillOval(120, 280, 10, 10);
-
-        g.drawOval(150, 280, 10, 10);
-        g.fillOval(150, 280, 10, 10);
+        g.fillOval(100, 120, 160, 50);
     }
 }
 
