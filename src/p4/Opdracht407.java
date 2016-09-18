@@ -8,7 +8,7 @@ public class Opdracht407 extends Applet {
     }
 
     public void paint(Graphics g) {
-        setBackground(Color.BLUE);
+
 
 
         g.setColor(Color.BLACK);

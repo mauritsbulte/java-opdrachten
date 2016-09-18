@@ -4,7 +4,6 @@ import java.applet.*;
 
 
 public class Opdracht601 extends Applet {
-    int a;
     double b;
     double c;
     double uitkomst;
