@@ -3,14 +3,13 @@ import java.awt.*;
 import java.applet.*;
 
 public class Opdracht5 extends Applet {
-
-    public void init() {
-    }
     int x = 150;
     int y = 70;
     int A = 160;
     int B = 10;
     int C = 100;
+    public void init() {
+    }
     public void paint (Graphics g)
     {
         setBackground(Color.WHITE);
@@ -19,7 +18,7 @@ public class Opdracht5 extends Applet {
 
         g.drawRect(10, 30, x, y);
 
-        g.setColor(Color.magenta);
+        g.setColor(Color.MAGENTA);
 
         g.drawOval(200, 120, x, y);
         g.fillOval(200, 120, x, y);
