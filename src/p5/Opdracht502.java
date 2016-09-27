@@ -4,46 +4,79 @@ import java.awt.*;
 import java.applet.*;
 
 public class Opdracht502 extends Applet{
+    int begin;
     Color opvulkleur;
     Color lijnkleur;
     int breedte;
     int hoogte;
     int hoogte2;
     int hoogte3;
+
+    int valerie, hoogteyvaleriey1, hoogteyvaleriey2, staafGrootteValerie;
+
+    int jeroen, hoogteJeroeny1, hoogteJeroeny2, staafGrootteJeroen;
+
+    int hans, hoogteHansy1, hoogteHansy2, staafGrootteHans;
+
+
+    int Valerie = 40;
+    int Hans = 80;
+    int Jeroen = 100;
+    int base = 250;
+    int base2 = 200;
+    int base3 = 190;
     public void init() {
         opvulkleur = Color.WHITE;
         lijnkleur = Color.RED;
-        breedte = 10;
-        hoogte = 40;
-        hoogte2 = 80;
-        hoogte3 = 100;
+
     }
 
     public void paint(Graphics g) {
         setBackground(opvulkleur);
         g.setColor(lijnkleur);
-        g.drawRect(360, 240, breedte, hoogte);
-        g.drawString("Valerie",350, 295);
-        g.fillRect(360, 240, breedte, hoogte);
 
-        g.drawRect(330, 200, breedte, hoogte2);
-        g.drawString("Hans", 315, 295);
-        g.fillRect(330, 200, breedte, hoogte2);
+        valerie = 40;
+        hans = 80;
+        jeroen = 100;
 
-        g.drawRect(290, 180, breedte, hoogte3);
-        g.drawString("Jeroen", 270, 295);
-        g.fillRect(290, 180, breedte, hoogte3);
-        g.drawString("Gewicht in kilo", 295, 170);
-        g.drawString("100", 250, 190);
+        begin = 250;
 
-        g.drawString("80", 250, 210);
+        staafGrootteValerie = valerie *2;
+        hoogteyvaleriey2 = staafGrootteValerie;
+        hoogteyvaleriey1 = begin - hoogteyvaleriey2;
 
-        g.drawString("60", 250, 230);
+        staafGrootteJeroen = jeroen *2;
+        hoogteJeroeny2 = staafGrootteJeroen;
+        hoogteJeroeny1 = begin - hoogteJeroeny2;
 
-        g.drawString("40", 250, 250);
+        staafGrootteHans = hans *2;
+        hoogteHansy2 = staafGrootteHans;
+        hoogteHansy1 = begin - hoogteHansy2;
 
-        g.drawString("20", 250, 270);
+        g.drawLine(70, base, 140, base);
 
-        g.drawString("0", 250, 285);
+
+        g.drawString("Valerie",50, 270);
+        g.fillRect(80, hoogteyvaleriey1, 10, hoogteyvaleriey2);
+
+
+        g.drawString("Hans", 90, 270);
+        g.fillRect(100, hoogteHansy1, 10, hoogteHansy2);
+
+
+        g.drawString("Jeroen", 120, 270);
+        g.fillRect(120, hoogteJeroeny1, 10, hoogteJeroeny2);
+        g.drawString("Gewicht in kilo", 60, 40);
+        g.drawString("100", 60, 60);
+
+        g.drawString("80", 60, 90);
+
+        g.drawString("60", 60, 135);
+
+        g.drawString("40", 60, 180);
+
+        g.drawString("20", 60, 220);
+
+        g.drawString("0", 60, 250);
     }
 }
