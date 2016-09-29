@@ -2,7 +2,8 @@ package p8;
 
 import java.awt.*;
 import java.applet.*;
-
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 
 public class Opdracht802 extends Applet {
@@ -12,6 +13,12 @@ public class Opdracht802 extends Applet {
     Button knop2;
     Button knop3;
     Button knop4;
+
+    TextField g1;
+    TextField g2;
+    TextField g3;
+    TextField g4;
+
 
     int getal1;
     int getal2;
@@ -23,36 +30,70 @@ public class Opdracht802 extends Applet {
     Label LabelVrouwen;
     Label LabelPotentiëleMannen;
     Label LabelPotentiëleVrouwen;
-    @Override
+
     public void init() {
-        super.init();
 
-        add(knop1);
-        LabelMannen = new Label("Mannen", 20);
+
+        g1 = new TextField("");
+        add(g1);
         knop1 = new Button("Mannen");
-        getal1 = getal1 + 1;
-        add(LabelMannen);
+        add(knop1);
+        Knop1Listener kl = new Knop1Listener();
+        knop1.addActionListener(kl);
 
-        add(knop2);
-        LabelVrouwen = new Label("Vrouwen");
+        g2 = new TextField("");
+        add(g2);
         knop2 = new Button("Vrouwen");
-        getal2 = getal2 + 1;
-        add(LabelVrouwen);
+        add(knop2);
+        Knop2Listener k2 = new Knop2Listener();
+        knop2.addActionListener(k2);
 
-        add(knop3);
-        LabelPotentiëleMannen = new Label("Potentiële Mannen");
+
+        g3 = new TextField("");
+        add(g3);
         knop3 = new Button("Potentiële Mannen");
-        getal3 = getal3 + 1;
-        add(LabelPotentiëleMannen);
+        add(knop3);
+        Knop3Listener k3l = new Knop3Listener();
+        knop3.addActionListener(k3l);
 
-        add(knop4);
-        LabelPotentiëleVrouwen = new Label("Potentiële Vrouwen");
+        g4 = new TextField("");
+        add(g4);
         knop4 = new Button("Potentiële Vrouwen");
-        getal4 = getal4 + 1;
-        add(LabelPotentiëleVrouwen);
+        add(knop4);
+        Knop4Listener k4l = new Knop4Listener();
+        knop4.addActionListener(k4l);
+
     }
 
     public void paint(Graphics g) {
-        g.drawString("Het getal is " + getal1, 50, 60);
     }
-}
+    class Knop1Listener implements ActionListener {
+
+        public void actionPerformed(ActionEvent e) {
+            getal1 = getal1 + 1;
+            g1.setText("" + getal1);
+        }
+    }
+    class Knop2Listener implements ActionListener {
+
+        public void actionPerformed(ActionEvent e) {
+            getal2 = getal2 + 1;
+            g2.setText("" + getal2);
+        }
+    }
+    class Knop3Listener implements ActionListener {
+
+        public void actionPerformed(ActionEvent e) {
+            getal3 = getal3 + 1;
+            g3.setText("" + getal3);
+        }
+    }
+        class Knop4Listener implements ActionListener {
+
+            public void actionPerformed(ActionEvent e) {
+                getal4 = getal4 + 1;
+                g4.setText("" + getal4);
+            }
+        }
+    }
+

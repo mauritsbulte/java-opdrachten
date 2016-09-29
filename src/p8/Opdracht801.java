@@ -6,7 +6,7 @@ import java.awt.event.*;
 
 
 public class Opdracht801 extends Applet {
-    Button knop2;
+    Button knop7;
     String schermtekst;
     TextField tekstvakje;
     Label label;
@@ -16,10 +16,10 @@ public class Opdracht801 extends Applet {
         add(label);
         add(tekstvakje);
         schermtekst = "Doet deze knop wel iets?";
-        knop2 = new Button("Klik op mij");
-        Knop2Listener kl = new Knop2Listener();
-        knop2.addActionListener(kl);
-        add(knop2);
+        knop7 = new Button("Klik op mij");
+        Knop7Listener kl = new Knop7Listener();
+        knop7.addActionListener(kl);
+        add(knop7);
         add(tekstvakje);
     }
 
@@ -28,7 +28,7 @@ public class Opdracht801 extends Applet {
 
     }
 
-    class Knop2Listener implements ActionListener {
+    class Knop7Listener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             schermtekst = tekstvakje.getText();
 
