@@ -73,12 +73,12 @@ public class Praktijkopdracht2h8 extends Applet{
         g.fillRect(80, hoogteyvaleriey1, 10, hoogteyvaleriey2);
 
 
-        g.drawString("Hans", 90, 270);
-        g.fillRect(100, hoogteHansy1, 10, hoogteHansy2);
+        g.drawString("Jeroen", 90, 270);
+        g.fillRect(100, hoogteJeroeny1, 10, hoogteJeroeny2);
 
 
-        g.drawString("Jeroen", 120, 270);
-        g.fillRect(120, hoogteJeroeny1, 10, hoogteJeroeny2);
+        g.drawString("Hans", 130, 270);
+        g.fillRect(120, hoogteHansy1, 10, hoogteHansy2);
         g.drawString("Gewicht in kilo", 60, 40);
         g.drawString("100", 60, 60);
 
