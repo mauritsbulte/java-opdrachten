@@ -19,17 +19,11 @@ public class Opdracht802 extends Applet {
     TextField g3;
     TextField g4;
 
-
     int getal1;
     int getal2;
     int getal3;
     int getal4;
-    int uitkomst;
 
-    Label LabelMannen;
-    Label LabelVrouwen;
-    Label LabelPotentiëleMannen;
-    Label LabelPotentiëleVrouwen;
 
     public void init() {
 
