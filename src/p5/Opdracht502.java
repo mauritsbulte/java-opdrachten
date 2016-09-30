@@ -7,10 +7,6 @@ public class Opdracht502 extends Applet{
     int begin;
     Color opvulkleur;
     Color lijnkleur;
-    int breedte;
-    int hoogte;
-    int hoogte2;
-    int hoogte3;
 
     int valerie, hoogteyvaleriey1, hoogteyvaleriey2, staafGrootteValerie;
 
@@ -19,12 +15,9 @@ public class Opdracht502 extends Applet{
     int hans, hoogteHansy1, hoogteHansy2, staafGrootteHans;
 
 
-    int Valerie = 40;
-    int Hans = 80;
-    int Jeroen = 100;
+
     int base = 250;
-    int base2 = 200;
-    int base3 = 190;
+
     public void init() {
         opvulkleur = Color.WHITE;
         lijnkleur = Color.RED;
