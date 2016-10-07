@@ -5,12 +5,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-public class Opdracht10 extends Applet {
+public class Opdracht102 extends Applet {
     TextField Tekstvak1;
     TextField Tekstvak2;
 
     Button knoptekstvak1;
-
+    Button knoptekstvak2;
 
 
     double getaltekstvak1;
@@ -35,7 +35,7 @@ public class Opdracht10 extends Applet {
 
     public void paint(Graphics g) {
         g.drawString("" + getaltekstvak1 + " is groter dan " + getaltekstvak2 + ": " + (getaltekstvak1 > getaltekstvak2), 50, 60 );
-
+        g.drawString("" + getaltekstvak2 + " is kleiner dan " + getaltekstvak1 + ": " + (getaltekstvak2 < getaltekstvak1), 50, 80 );
 
     }
     class knoptekstvak1listener implements ActionListener {
@@ -50,4 +50,3 @@ public class Opdracht10 extends Applet {
             repaint();
         }
     }
-}
