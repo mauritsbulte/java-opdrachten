@@ -5,37 +5,80 @@ import java.awt.event.*;
 
 
 public class Opdracht103 extends Applet {
-
-    int leeftijd;
     TextField tekstvak;
     Label label;
-    String tekst;
+    String s, tekst;
+    int dag;
 
     public void init() {
-        tekstvak = new TextField("", 5);
-        tekstvak.addActionListener( new VakListener() );
+        tekstvak = new TextField("", 20);
+        label = new Label("Type het maandnummer en druk op enter");
+        tekstvak.addActionListener(new TekstvakListener());
         tekst = "";
-
-        label = new Label("Geef uw leeftijd in en druk op enter" );
-
-        add( label );
-        add( tekstvak );
+        add(label);
+        add(tekstvak);
     }
 
     public void paint(Graphics g) {
-        g.drawString(tekst, 50, 45 );
+        g.drawString(tekst, 50, 80);
     }
 
-    class VakListener implements ActionListener {
-        public void actionPerformed( ActionEvent e ) {
-            String s;
-
+    class TekstvakListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
             s = tekstvak.getText();
-            leeftijd = Integer.parseInt( s );
-            if ( leeftijd > 20 ) {
-                tekst = "U bent meerderjarig.";
-                repaint();
+            dag = Integer.parseInt(s);
+            switch (dag) {
+                case 1:
+                    tekst = "Januari heeft 31 dagen";
+                    break;
+
+                case 2:
+                    tekst = "Februari heeft 28 dagen";
+                    break;
+
+                case 3:
+                    tekst = "Maart heeft 31 dagen";
+                    break;
+
+                case 4:
+                    tekst = "April heeft 30 dagen";
+                    break;
+                case 5:
+                    tekst = "Mei heeft 31 dagen";
+                    break;
+
+                case 6:
+                    tekst = "Juni heeft 30 dagen";
+                    break;
+
+                case 7:
+                    tekst = "Juli heeft 31 dagen";
+                    break;
+
+                case 8:
+                    tekst = "Augustus heeft 31 dagen";
+                    break;
+
+                case 9:
+                    tekst = "September heeft 30 dagen";
+                    break;
+
+                case 10:
+                    tekst = "Oktober heeft 31 dagen";
+                    break;
+
+                case 11:
+                    tekst = "November heeft 30 dagen";
+                    break;
+
+                case 12:
+                    tekst = "December heeft 31 dagen";
+                    break;
+                default:
+                    tekst = "U heeft een verkeerd nummer ingetikt ..!";
+                    break;
             }
+            repaint();
         }
     }
 }

@@ -30,14 +30,14 @@ public class Opdracht102 extends Applet {
         knoptekstvak1.addActionListener(kli);
 
 
-
     }
 
     public void paint(Graphics g) {
-        g.drawString("" + getaltekstvak1 + " is groter dan " + getaltekstvak2 + ": " + (getaltekstvak1 > getaltekstvak2), 50, 60 );
-        g.drawString("" + getaltekstvak2 + " is kleiner dan " + getaltekstvak1 + ": " + (getaltekstvak2 < getaltekstvak1), 50, 80 );
+        g.drawString("" + getaltekstvak1 + " is groter dan " + getaltekstvak2 + ": " + (getaltekstvak1 > getaltekstvak2), 50, 60);
+        g.drawString("" + getaltekstvak2 + " is kleiner dan " + getaltekstvak1 + ": " + (getaltekstvak2 < getaltekstvak1), 50, 80);
 
     }
+
     class knoptekstvak1listener implements ActionListener {
 
         @Override
@@ -50,3 +50,4 @@ public class Opdracht102 extends Applet {
             repaint();
         }
     }
+}
