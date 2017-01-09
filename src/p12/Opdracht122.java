@@ -16,7 +16,7 @@ public class Opdracht122 extends Applet {
 
 
 
-        for (int teller = 0; teller < 26; teller++) {
+        for (int teller = 0; teller < 101; teller++) {
             knop = new Button("klik");
             add(knop);
         }

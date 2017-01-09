@@ -1,14 +1,15 @@
 package p12;
-        import java.applet.*;
-        import java.awt.*;
-        import java.awt.event.ActionEvent;
-        import java.awt.event.ActionListener;
+import java.applet.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Arrays;
 
 
-public class Opdracht125 extends Applet {
+public class Opdracht126 extends Applet {
 
 
-    int[] getallen = {55, 44, 58, 102, 23, 37, 31, 52, 17};
+    int[] getallen = {1, 1, 2, 2, 2, 3, 3, 3, 3};
 
 
     TextField textField;
@@ -37,27 +38,22 @@ public class Opdracht125 extends Applet {
 
         g.drawString(schermtekst, x, y);
     }
-
-
     class KnopListener implements ActionListener {
-        @Override
+
         public void actionPerformed(ActionEvent e) {
             int invoer = Integer.parseInt(textField.getText());
-            boolean isgevonden = false;
-            int index = 0;
-            for (int i = 0; i < getallen.length; i++) {
-                if (getallen[i] == invoer) {
-                    isgevonden = true;
-                    index = i;
-                }
 
+            int[] nummers = {7, 2, 3, 6, 7, 6, 7, 8, 6, 10, 2};
+            Arrays.sort(nummers);
 
-                if (isgevonden) {
-                    schermtekst = "Is gevonden. Index is " + index;
+            for (int i = 1; i < nummers.length; i++) {
+                if (nummers[i] == nummers[i - 1]) {
+
+                schermtekst = "wordt het meest herhaald" + nummers[i] ;
                 } else {
-                    schermtekst = "Is niet gevonden";
+                    schermtekst = "word het minst herhaald";
+                    repaint();
                 }
-                repaint();
             }
         }
     }
