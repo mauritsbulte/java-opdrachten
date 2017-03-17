@@ -46,8 +46,8 @@ public class Javatoets extends Applet {
                 tokio = tijd - 17;
             }
             galapagos = tijd - 7;
-            if (tijd < 0) {
-                galapagos = tijd + 7;
+            if (tijd < 1) {
+                galapagos = tijd - 7;
             }
             london = tijd - 1;
             if (tijd < 1) {
