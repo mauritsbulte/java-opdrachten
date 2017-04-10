@@ -11,7 +11,7 @@ public class Afbeelding extends Applet {
 
     public void init() {
         pad = Afbeelding.class.getResource("/resources/");
-        afbeelding = getImage(pad, "Old_sponge.png");
+        afbeelding = getImage(pad, "Magma_Block.png");
     }
 
     public void paint(Graphics g) {

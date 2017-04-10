@@ -10,6 +10,7 @@ public class Opdracht116 extends Applet {
     public void init() {}
 
     public void paint(Graphics g) {
+
         int teller;
         int verandering = 10;
         int x = 50;

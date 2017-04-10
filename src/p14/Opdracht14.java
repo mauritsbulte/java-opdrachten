@@ -29,7 +29,7 @@ public class Opdracht14 extends Applet {
         public void actionPerformed(ActionEvent e) {
 
             // Arrays voor de kaart kleur en kaart nummer
-            String[] kleurenStringArray = {"Schoppen ", "Harten ", "Klaveren ", "Ruiten "},
+            String[] kleurenStringArray = {"Schoppen ", "Harten ", "Klaver ", "Ruiten "},
                     kaartenStringArray = {"aas", "twee", "drie", "vier", "vijf", "zes", "zeven", "acht", "negen", "tien", "boer", "vrouw", "heer"};
 
             // Random getal voor de twee arrays

@@ -12,8 +12,8 @@ public class Opdracht117 extends Applet {
     public void paint(Graphics g) {
         int teller;
         int verandering = 10;
-        int x = 50;
-        int y = 50;
+        int x = 250;
+        int y = 250;
 
         for(teller = 1; teller < 51; teller++) {
             verandering += 10;

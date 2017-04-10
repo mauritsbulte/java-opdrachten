@@ -64,28 +64,28 @@ public class Opdracht802 extends Applet {
     class Knop1Listener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            getal1 = getal1 + 1;
+            getal1 +=+ 1;
             g1.setText("" + getal1);
         }
     }
     class Knop2Listener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            getal2 = getal2 + 1;
+            getal2 += 1;
             g2.setText("" + getal2);
         }
     }
     class Knop3Listener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            getal3 = getal3 + 1;
+            getal3 += 1;
             g3.setText("" + getal3);
         }
     }
         class Knop4Listener implements ActionListener {
 
             public void actionPerformed(ActionEvent e) {
-                getal4 = getal4 + 1;
+                getal4 += 1;
                 g4.setText("" + getal4);
             }
         }

@@ -29,7 +29,7 @@ public class Praktijkopdrachth10 extends Applet {
     class TekstvakListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             s = tekstvak.getText();
-            dag = Integer.parseInt( s);
+            dag = Integer.parseInt( s );
 
             switch(dag) {
                 case 1:
